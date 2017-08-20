@@ -15,11 +15,7 @@ class NewsController extends Controller{
     // отображение всего списка новостей
     public function actionIndex(){
         $id = (yii::$app->request->get('id')) ? yii::$app->request->get('id') : 0;
-/*
-        echo "<pre>";
-        echo "<h2>ID: " . $id . "</h2>";
-        echo "</pre>";
-*/
+
         $query = News::find();
         $pages = new Pagination(['totalCount' => $query->count()
             , 'pageSize'       => 3

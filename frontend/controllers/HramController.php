@@ -63,6 +63,7 @@ class HramController extends Controller
         }
     }
 
+
 /*
     public function actionNews($id = null){
         $header  = $this->renderPartial('header');

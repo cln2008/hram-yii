@@ -108,6 +108,7 @@
                         $eventText .= $event['time'] . ' ' . $event['name'] . '<br>';
                     }
                 }
+                echo "<p style='color: green; border: 0px solid red;'>+</p>";
                 echo "<p style='border: 0px solid red;'><b>" . $date . " " . $monthName . "</b></p>";
                 echo "<p><b>" . $holiday . "</b></p><br>";
                 echo "<p style='text-align: left; padding-left: 5px;'>" . $eventText . "</p>";

@@ -27,7 +27,7 @@ class MainMenu extends Widget{
         $menu .=  '<div class="container-fluid">';
         $menu .= '<ul class="nav navbar-nav">';
         foreach($m as $item){
-          $menu .= '<li><a href="#" class="mes2">' . $item->item_name . '</a></li>';
+          $menu .= '<li><a href="' . $item->item_route . '" class="mes2">' . $item->item_name . '</a></li>';
         }
         $menu .= '</ul>';
         $menu .=  '</div>';
