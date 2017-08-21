@@ -10,7 +10,7 @@ Yii::$app->formatter->timeZone = 'UTC';
 
 ?>
 
-<?= \frontend\components\SiteBlock::widget(['blockName' => 'header']) ?>
+<?/*= \frontend\components\SiteBlock::widget(['blockName' => 'header'])*/ ?>
 
 <div class="container" id="main-content" style="min-height: 700px; width: 100%;">
 

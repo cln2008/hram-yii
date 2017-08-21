@@ -40,8 +40,12 @@ $this->title = 'Храм Святого Георгия Победоносца';
 
 <?php
    echo "<script language=\"Javascript\" src=\"http://script.days.ru/calendar.php?advanced=1&date=" . date('md') . "&dayicon=1&feofan=1\"></script>";
-?>
 
+   // виджет отображения заголовка страницы
+   echo \frontend\components\Header::widget();
+
+
+?>
 
   <?= $content ?>
 

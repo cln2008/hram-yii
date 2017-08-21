@@ -63,6 +63,7 @@ return [
                 'news/<id:\d+>'        => 'news/view',
                 'news'                 => 'news/show',
                 'schedule'             => 'hram/schedule',
+                'gallery/<id:\d+>'      => 'gallery/view',
                 'gallery'              => 'gallery/index',
                 'hram/<alias:\w+>'     => 'hram/info', // любое символьное значение
                 '/georg'               => 'hram/georg', // любое символьное значение
