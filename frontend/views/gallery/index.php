@@ -23,16 +23,27 @@
                     <span style="font-family: 'Conv_cyrillic_old'; font-size: 22px; color: #006400;"><?= $pageText ?></span>
                 </div>
                 <div class="panel-body">
-                    <h4>YII:     <?= Yii::getAlias('@yii') ?></h4>
-                    <h4>APP:     <?= Yii::getAlias('@app') ?></h4>
-                    <h4>RUNTIME: <?= Yii::getAlias('@runtime') ?></h4>
-                    <h4>VENDOR:  <?= Yii::getAlias('@vendor') ?></h4>
-                    <h4>WEBROOT: <?= Yii::getAlias('@webroot') ?></h4>
-                    <h4>WEB:     <?= Yii::getAlias('@web') ?></h4>
-                    <h4>IMG:     <?= Yii::getAlias('@img') ?></h4>
-                    <hr>
-<!--                    <img src='@app/20170410_095547.jpg' alt="" title="Image">-->
-                    <?= \yii\helpers\Html::img('@web/img/galleries/20170410_095547.jpg', ['alt' => "", 'title' => "Image"]) ?>
+<!--                    <h4>YII:     <?/*= Yii::getAlias('@yii') */?></h4>
+                    <h4>APP:     <?/*= Yii::getAlias('@app') */?></h4>
+                    <h4>RUNTIME: <?/*= Yii::getAlias('@runtime') */?></h4>
+                    <h4>VENDOR:  <?/*= Yii::getAlias('@vendor') */?></h4>
+                    <h4>WEBROOT: <?/*= Yii::getAlias('@webroot') */?></h4>
+                    <h4>WEB:     <?/*= Yii::getAlias('@web') */?></h4>
+                    <h4>IMG:     <?/*= Yii::getAlias('@img') */?></h4>
+                    <hr>-->
+
+<!--                    <img src="/img/galleries/jm/jm_002.jpg" class="img-responsive">
+                    --><?/*= \yii\helpers\Html::img('@web/img/galleries/20170410_095547.jpg',
+                          ['alt' => ""
+                         , 'title' => "Image"
+                         , 'style' => 'width: 30%'
+                         , 'class' => 'img-responsive']) */?>
+
+                    <?php
+                    echo "<pre>";
+                    print_r($galleries);
+                    echo "</pre>";
+                    ?>
 
 
 

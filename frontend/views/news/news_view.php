@@ -41,7 +41,20 @@ Yii::$app->formatter->timeZone = 'UTC';
                             <li class="breadcrumb-item active"><?= $news->news_title?></li>
                         </ol>
                         <hr>
+
                         <?= $news->news_text ?>
+                        <!-- gallery here -->
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <a href="/img/galleries/jm/jm_001.jpg" data-toggle="lightboxgallary" data-gallery="multiimages" data-title="strawberries" data-footer="RED" class="col-sm-3" style="margin-top: 15px;">
+                                    <img src="/img/galleries/jm/jm_001.jpg" class="img-responsive">
+                                </a>
+
+                                <a href="/img/galleries/jm/jm_002.jpg" data-toggle="lightboxgallary" data-gallery="multiimages" data-title="strawberries" data-footer="RED" class="col-sm-3" style="margin-top: 15px;">
+                                    <img src="/img/galleries/jm/jm_002.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <?php endif; ?>

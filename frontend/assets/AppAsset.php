@@ -16,8 +16,11 @@ class AppAsset extends AssetBundle
         'css/fonts.css',
         'css/bootstrap.css',
         'css/custom.css',
+        'css/ekko-lightbox.min.css',
     ];
     public $js = [
+        'js/ekko-lightbox.min.js',
+        'js/lb-script.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

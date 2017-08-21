@@ -35,7 +35,7 @@ class NewsController extends Controller{
 
     }
 
-    public function actionView(){
+    public function actionView($id){
         $id = (yii::$app->request->get('id')) ? yii::$app->request->get('id') : 0;
         $news  = News::find()->where(['id' => $id])->one();
 

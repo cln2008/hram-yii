@@ -42,6 +42,7 @@
                     </ol>
                     <hr>
                     <?= $news->news_text ?>
+
                 </div>
             </div>
             <?php else: ?>
@@ -65,7 +66,7 @@
                                 <p class="text-muted"><?= Yii::$app->formatter->asDate($item->news_date, 'php:d.m.Y') ?></p>
                                 <p style="text-indent: 15px;"><?= $item->news_description ?></p>
                                 <p class="text-muted">
-                                    <a href="<?= Url::to(['news/index', 'id' => $item->id]) ?>">Читать далее ...</a>
+                                    <a href="<?= Url::to(['news/view', 'id' => $item->id]) ?>">Читать далее ...</a>
                                 </p>
                             </div>
                         </div>
