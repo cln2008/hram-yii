@@ -152,6 +152,7 @@ NavBar::end();
                     ['url' => 'pg/list', 'name' => 'Страницы', 'fa_class' => 'fa-book'],
                     ['url' => 'news/list', 'name' => 'Новости', 'fa_class' => 'fa-newspaper-o'],
                     ['url' => 'schedule/list', 'name' => 'Расписание', 'fa_class' => 'fa-calendar'],
+                    ['url' => 'gallery/list', 'name' => 'Галереи', 'fa_class' => 'fa-calendar'],
                   ];
         ?>
 
