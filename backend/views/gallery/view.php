@@ -24,7 +24,19 @@ use kartik\file\FileInput;
     <?= $form->field($gallery, 'gallery_title')->textInput(['maxlength' => true])->label('Заголовок галереи') ?>
     <?= $form->field($gallery, 'gallery_path')->textInput()->label('Сохранять') ?>
 <!--    --><?//= $form->field($gallery, 'imageFile')->fileInput() ?>
-    <?= $form->field($gallery, 'imageFile')->widget(FileInput::classname(), ['options' => ['accept' => 'image/*'],]) ?>
+    <?= $form->field($gallery, 'imageFile')->widget(FileInput::classname(),
+        [
+           'options' => ['accept' => 'image/*'],
+            'language' => 'ru',
+           'pluginOptions' => [
+               'showPreview' => true,
+               'showRemove' => false,
+               'showUpload' => true,
+               'browseClass' => 'btn btn-danger btn-sm',
+
+           ],
+        ])
+    ?>
 
 <!--
     // Usage with ActiveForm and model
@@ -39,6 +51,23 @@ use kartik\file\FileInput;
     <?php ActiveForm::end(); ?>
 
 </div>
+
+<br><br>
+<?= FileInput::widget(
+    [
+        'model' => $gallery,
+        'attribute' => 'gallery_preview',
+        'options' => ['accept' => 'image/*'],
+        'language' => 'ru',
+        'pluginOptions' => [
+            'showPreview' => true,
+            'showRemove' => false,
+            'showUpload' => true,
+            'browseClass' => 'btn btn-danger btn-sm',
+
+        ],
+    ])
+?>
 
 
 

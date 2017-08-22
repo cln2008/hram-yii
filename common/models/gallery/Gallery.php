@@ -21,14 +21,14 @@ class Gallery extends ActiveRecord
         return 'galleries';
     }
 
-    public function behaviors()
+/*    public function behaviors()
     {
         return [
             'imageFile' => [
                 'class' => 'rico\yii2images\behaviors\ImageBehave',
             ]
         ];
-    }
+    }*/
 
 
     public function rules()
