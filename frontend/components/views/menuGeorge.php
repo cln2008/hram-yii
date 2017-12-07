@@ -1,5 +1,3 @@
-<!-- <div class="col-md-3" style="border: 0px solid #8c8c8c;"> -->
-
 <div class="panel panel-default" style="min-height: 400px;">
     <div class="panel-heading"><span style="font-family: 'Conv_cyrillic_old'; font-size: 22px; color: #006400;">Житие</span></div>
     <div class="panel-body">
@@ -10,5 +8,3 @@
         </div>
     </div>
 </div>
-
-<!-- </div> -->

@@ -23,6 +23,10 @@ class MainMenu extends Widget{
         // попытаемся получить данные сначала из кэша
         $m = mMainMenu::find()->where(['is_active' => 1])->all();
         // $m = ['Главная', 'Новости', 'О храме', 'Расписание Богослужений', 'Галерея', 'Контакты'];
+
+        return $this->render('mainMenu', compact('m'));
+
+/*
         $menu  = '<nav class="navbar navbar-default" style="margin-bottom: 0px;">';
         $menu .=  '<div class="container-fluid">';
         $menu .= '<ul class="nav navbar-nav">';
@@ -32,6 +36,8 @@ class MainMenu extends Widget{
         $menu .= '</ul>';
         $menu .=  '</div>';
         $menu .= '</nav>';
+
+*/
 
 
         // $this->data = Category::find()->indexBy('id')->asArray()->all();
@@ -48,6 +54,6 @@ class MainMenu extends Widget{
         // Yii::$app->cache->set('menu', $this->menuHtml, 60); // задается ключ, данные и время жизни кэша в секундах
         // return $this->menuHtml;
 
-        return $menu;
+        // return $menu;
     }
 }

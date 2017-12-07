@@ -21,6 +21,7 @@ class Header extends Widget{
         // $newsList = News::find()->orderBy(['news_date' => SORT_DESC])->limit(3)->all();
         // $blockHtml = $this->getHtmlBlock($newsList);
 
-        return $this->renderFile('@app/views/templates/header.php');
+        // return $this->renderFile('@app/views/templates/header.php');
+        return $this->render('header');
     }
 }

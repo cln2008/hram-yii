@@ -1,4 +1,3 @@
-
 <div class="panel panel-default">
     <div class="panel-heading"><span style="font-family: 'Conv_cyrillic_old'; font-size: 22px; color: #006400;">Сегодня</span></div>
     <div class="panel-body">

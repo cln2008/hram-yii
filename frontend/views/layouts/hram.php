@@ -40,14 +40,46 @@ $this->title = 'Храм Святого Георгия Победоносца';
 
 <?php
    echo "<script language=\"Javascript\" src=\"http://script.days.ru/calendar.php?advanced=1&date=" . date('md') . "&dayicon=1&feofan=1\"></script>";
-
    // виджет отображения заголовка страницы
    echo \frontend\components\Header::widget();
-
-
 ?>
 
-  <?= $content ?>
+<div class="container" id="main-content" style="min-height: 700px; width: 100%;">
+    <?php if( (Yii::$app->controller->id == 'hram') and (Yii::$app->controller->action->id == 'index') ): ?>
+        <br>
+        <div class="row">
+            <?= \frontend\components\MainTop::widget() ?>
+        </div>
+        <br>
+    <?php endif; ?>
+
+
+    <div class="row">
+        <div class="col-md-3" style="border: 0px solid black;">
+            <?= \frontend\components\MenuHram::widget() ?>
+            <?= \frontend\components\MenuGeorge::widget() ?>
+            <?= \frontend\components\MenuToday::widget() ?>
+        </div>
+
+        <div class="col-md-9" style="border: 0px solid black;">
+            <?= $content ?>
+            <?//= \frontend\components\NewsBlock3::widget() ?>
+            <?//= \frontend\components\ScheduleBlock::widget() ?>
+            <h1 style="color: navy;">TEST 123</h1>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
 
 <?php $this->endBody() ?>
 </body>
