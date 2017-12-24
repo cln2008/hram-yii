@@ -4,7 +4,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\web\Controller;
 use frontend\models\Pages;
-use frontend\models\News;
+use common\models\News;
 use yii\data\Pagination;
 
 /**

@@ -18,15 +18,6 @@
 
 
     <div class="row">
-        <div class="col-md-3" style="border: 0px solid black;">
-
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left1']) ?>
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left2']) ?>
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left3']) ?>
-
-
-        </div>
-
         <div class="col-md-9">
             <?php if($news): ?>
             <div class="panel panel-default" style="border-bottom: none;">
