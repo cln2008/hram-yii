@@ -57,4 +57,14 @@ class HramController extends Controller
         }
     }
 
+    public function actionContacts()
+    {
+        return $this->render("contacts");
+    }
+
+    public function actionAbout()
+    {
+        return $this->render("about");
+    }
+
 }

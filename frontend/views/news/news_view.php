@@ -18,16 +18,6 @@ Yii::$app->formatter->timeZone = 'UTC';
 
 
     <div class="row">
-        <div class="col-md-3" style="border: 0px solid black;">
-
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left1']) ?>
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left2']) ?>
-            <?= \frontend\components\SiteBlock::widget(['blockName' => 'left3']) ?>
-
-
-        </div>
-
-        <div class="col-md-9">
             <?php if($news): ?>
                 <div class="panel panel-default" style="border-bottom: none;">
                     <div class="panel-heading">
@@ -42,8 +32,27 @@ Yii::$app->formatter->timeZone = 'UTC';
                         </ol>
                         <hr>
 
+
+
+
+                        <div class="panel panel-default" style="border-bottom: none;">
+                            <div class="panel-heading">
+                                <span style="font-family: 'Conv_cyrillic_old'; font-size: 24px; color: #006400;">
+                                    Слово о. Владимира
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <audio controls>
+                                    <source src="/mp3/<?= $news->news_mp3 ?>" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+
+
                         <?= $news->news_text ?>
                         <!-- gallery here -->
+<!--
                         <div class="row">
                             <div class=" col-md-12">
                                 <a href="/img/galleries/jm/jm_001.jpg" data-toggle="lightboxgallary" data-gallery="multiimages" data-title="strawberries" data-footer="RED" class="col-sm-3" style="margin-top: 15px;">
@@ -55,12 +64,10 @@ Yii::$app->formatter->timeZone = 'UTC';
                                 </a>
                             </div>
                         </div>
+-->
                     </div>
                 </div>
             <?php endif; ?>
-
-        </div>
-
     </div>
 
 </div>

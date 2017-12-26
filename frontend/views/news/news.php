@@ -69,12 +69,6 @@
             </div>
 
 
-
-                <?php
-                // echo NewsBlock::widget();
-                // display pagination
-                ?>
-
             <?php endif; ?>
 
         </div>

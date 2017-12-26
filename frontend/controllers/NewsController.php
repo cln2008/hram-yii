@@ -16,12 +16,14 @@ class NewsController extends Controller{
     public function actionIndex(){
         $id = (yii::$app->request->get('id')) ? yii::$app->request->get('id') : 0;
 
-        $query = News::find();
+        $query = News::find()->where(['is_active' => 1])->orderBy(['id' => SORT_DESC]);
+/*
         $pages = new Pagination(['totalCount' => $query->count()
             , 'pageSize'       => 3
             , 'forcePageParam' => false   // опция для отображения ссылок в формате ЧПУ для пагтнации
             , 'pageSizeParam'  => false   // опция для отображения ссылок в формате ЧПУ для пагтнации
         ]);
+
 
         $items = $query->offset($pages->offset)->limit($pages->limit)->all();
 
@@ -32,14 +34,19 @@ class NewsController extends Controller{
         }
 
         return $this->render('news', compact('news',  'items', 'pages'));
+*/
 
+        $items = $query->all();
+        return $this->render('news1', compact('news',  'items'));
     }
 
     public function actionView($id){
+
         $id = (yii::$app->request->get('id')) ? yii::$app->request->get('id') : 0;
         $news  = News::find()->where(['id' => $id])->one();
 
         return $this->render('news_view', compact('news'));
+
     }
 
     public function actionShow(){

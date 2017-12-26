@@ -1,8 +1,8 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Alexey Manko
- * DateTime: 07.12.2017 18:10
+ * User: Alexey Manko 07.12.2017 18:10
+ * Виджет для отображения блока "Житие Георгия Победоносца"
  */
 
 namespace frontend\components;

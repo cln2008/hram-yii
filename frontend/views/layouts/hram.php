@@ -44,7 +44,7 @@ $this->title = 'Храм Святого Георгия Победоносца';
    echo \frontend\components\Header::widget();
 ?>
 
-<div class="container" id="main-content" style="min-height: 700px; width: 100%;">
+<div class="container" id="main-content" style="min-height: 700px; width: 100%; margin-top: 30px;">
     <?php if( (Yii::$app->controller->id == 'hram') and (Yii::$app->controller->action->id == 'index') ): ?>
         <br>
         <div class="row">
@@ -63,23 +63,10 @@ $this->title = 'Храм Святого Георгия Победоносца';
 
         <div class="col-md-9" style="border: 0px solid black;">
             <?= $content ?>
-            <?//= \frontend\components\NewsBlock3::widget() ?>
-            <?//= \frontend\components\ScheduleBlock::widget() ?>
-            <h1 style="color: navy;">TEST 123</h1>
+            <!-- <h1 style="color: navy;">TEST 123</h1> -->
         </div>
-
     </div>
-
-
-
 </div>
-
-
-
-
-
-
-
 
 <?php $this->endBody() ?>
 </body>

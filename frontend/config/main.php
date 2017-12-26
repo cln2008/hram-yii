@@ -58,15 +58,24 @@ return [
                 // http://hram.local/hram/news/page/2?%2Fhram%2Fnews=
                 // 'hram/news/<id:\d+>' => 'hram/news', // любое символьное значение
                 // 'hram/news/page/<page:\d+>'    => 'hram/news',
-
+/*
                 'news/page/<page:\d+>' => 'news/show',
-                'news/<id:\d+>'        => 'news/view',
+
                 'news'                 => 'news/show',
                 'schedule'             => 'hram/schedule',
                 'gallery/<id:\d+>'      => 'gallery/view',
                 'gallery'              => 'gallery/index',
                 'hram/<alias:\w+>'     => 'hram/info', // любое символьное значение
                 '/georg'               => 'hram/georg', // любое символьное значение
+
+*/
+
+                'news/<id:\d+>' => 'news/view',
+                'news'          => 'news/index',
+                'about'         => 'hram/about',
+                'schedule'      => 'hram/schedule',
+                'gallery'       => 'gallery/index',
+                'contacts'      => 'hram/contacts',
 
             ],
         ],
